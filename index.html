@@ -18,7 +18,185 @@
     <title>Eduvalt - Online Courses & Education Template</title>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <div class="container container--nav">
+                <div class="nav__content-wrapper flex">
+                    <!-- LOGO -->
+                    <a href="/" class="logo">
+                        <img src="assets/logo.png" alt="logo">
+                    </a>
+                    <!-- NAV ITEMS -->
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link active">
+                                Home
+                                <span class="img-wrapper">
+                                    <img src="assets/icons/arrow_down.svg" alt="arrow">
+                                </span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu__item active">
+                                    <a href="#" class="sub-menu__link">Home One</a>
+                                </li>
+                                <li class="sub-menu__item">
+                                    <a href="#" class="sub-menu__link">Home Two</a>
+                                </li>
+                                <li class="sub-menu__item">
+                                    <a href="#" class="sub-menu__link">Home Three</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">
+                                Courses
+                                <span class="img-wrapper">
+                                    <img src="assets/icons/arrow_down.svg" alt="arrow">
+                                </span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu__item">
+                                    <a href="#" class="sub-menu__link">All Courses</a>
+                                </li>
+                                <li class="sub-menu__item">
+                                    <a href="#" class="sub-menu__link">Course Details</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">
+                                Pages
+                                <span class="img-wrapper">
+                                    <img src="assets/icons/arrow_down.svg" alt="arrow">
+                                </span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu__item">
+                                    <a href="#" class="sub-menu__link">About Us</a>
+                                </li>
+                                <li class="sub-menu__item">
+                                    <a href="#" class="sub-menu__link">Our Instructors</a>
+                                </li>
+                                <li class="sub-menu__item">
+                                    <a href="#" class="sub-menu__link">Instructor Details</a>
+                                </li>
+                                <li class="sub-menu__item">
+                                    <a href="#" class="sub-menu__link">Our Mentors</a>
+                                </li>
+                                <li class="sub-menu__item">
+                                    <a href="#" class="sub-menu__link">Our Events</a>
+                                </li>
+                                <li class="sub-menu__item">
+                                    <a href="#" class="sub-menu__link">Event Details</a>
+                                </li>
+                                <li class="sub-menu__item">
+                                    <a href="#" class="sub-menu__link">Asked Questions</a>
+                                </li>
+                                <li class="sub-menu__item">
+                                    <a href="#" class="sub-menu__link">404 Page</a>
+                                </li>
+                                <li class="sub-menu__item">
+                                    <a href="#" class="sub-menu__link">Contact</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">
+                                Shop
+                                <span class="img-wrapper">
+                                    <img src="assets/icons/arrow_down.svg" alt="arrow">
+                                </span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu__item">
+                                    <a href="#" class="sub-menu__link">Shop Page</a>
+                                </li>
+                                <li class="sub-menu__item">
+                                    <a href="#" class="sub-menu__link">Shop Details</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">
+                                Blog
+                                <span class="img-wrapper">
+                                    <img src="assets/icons/arrow_down.svg" alt="arrow">
+                                </span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu__item">
+                                    <a href="#" class="sub-menu__link">Blog Grid</a>
+                                </li>
+                                <li class="sub-menu__item">
+                                    <a href="#" class="sub-menu__link">Blog Standard</a>
+                                </li>
+                                <li class="sub-menu__item">
+                                    <a href="#" class="sub-menu__link">Blog Details</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- INPUT BAR -->
+                    <form class="filter-bar">
+                        <div class="select-wrapper">
+                            <div class="filter-bar__categories-title">
+                                <div class="img-wrapper">
+                                    <img src="assets/icons/categories.svg" alt="categories">
+                                </div>
+                                <p class="select-text">Categories</p>
+                                <div class="img-wrapper">
+                                    <img src="assets/icons/arrow_down.svg" alt="arrw-down">
+                                </div>
+                            </div>
+                            <ul class="select-list d-none" id="select">
+                                <li value="categories" class="select-list__item">
+                                    <a href="#" class="select-list__link">Categories</a>
+                                </li>
+                                <li value="business" class="select-list__item">
+                                    <a href="#" class="select-list__link">Business</a>
+                                </li>
+                                <li value="data-science" class="select-list__item">
+                                    <a href="#" class="select-list__link">Data Science</a>
+                                </li>
+                                <li value="art-design" class="select-list__item">
+                                    <a href="#" class="select-list__link">Art & Design</a>
+                                </li>
+                                <li value="marketing" class="select-list__item">
+                                    <a href="#" class="select-list__link">Marketing</a>
+                                </li>
+                                <li value="finance" class="select-list__item">
+                                    <a href="#" class="select-list__link">Finance</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <input type="text" placeholder="Search For Course . . ." class="filter-bar__input">
+                        <button class="btn btn--search">
+                            <div class="img-wrapper">
+                                <img src="assets/icons/search.svg" alt="search">
+                            </div>
+                        </button>
+                    </form>
+                    <div class="divider"></div>
+                    <!-- CART -->
+                    <div class="shopping-bag">
+                        <div class="img-wrapper">
+                            <img src="assets/icons/shopping-bag.png" alt="shopping-bag">
+                        </div>
+                        <p class="item-number flex flex--center">0</p>
+                    </div>
+                    <!-- MOBILE MENU -->
+                    <div class="img-wrapper menu">
+                        <img src="assets/icons/menu.png" alt="menu">
+                    </div>
+                    <!-- DESKTOP BUTTONS -->
+                    <div class="button-group">
+                        <a href="#" class="btn btn--white">Log In</href>
+                        <a href="#" class="btn btn--primary try-for-free">Try For Free</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
     <script src="js/index.js"></script>
 </body>
 </html>

@@ -20,6 +20,15 @@ input, button, textarea, select {
     font: inherit;
 }
 
+select {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
 p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
 }
