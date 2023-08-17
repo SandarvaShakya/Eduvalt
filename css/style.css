@@ -312,8 +312,12 @@ nav{
     }
 
     .nav__item{
-        padding: 37px 12px;
+        padding: 34px 12px;
         position: relative;
+    }
+
+    .nav__item:hover{
+        color: var(--color-primary);
     }
 
     .sub-menu{
@@ -355,10 +359,6 @@ nav{
         display: flex;
         align-items: center;
         gap: 10px;
-    }
-
-    .nav__link:hover{
-        color: var(--color-primary);
     }
 }
 
