@@ -1,0 +1,51 @@
+:root{
+    /* COLORS */
+    --color-primary: #1363DF;
+    --color-light-blue: #03C0EA;
+    --color-dark-blue: #082A5E;
+    --color-blue-1: #5A7093;
+    --color-blue-2: #39557E;
+    --color-green-1: #82B440;
+    --color-green-2: #12BB6A;
+    --color-green-3: #04BC53;
+    --color-purple-1: #8121FB;
+    --color-purple-2: #BC18E4;
+    --color-red: #FF2020;
+    --color-pink: #FF109F;
+    --color-yellow: #FAB123;
+    --color-card-bg-gray: #F4F7FB;
+    --color-gray: #E7EFFC;
+    --color-white: #fff;
+    --color-black: #000;
+
+    /* BORDER COLORS */
+    --color-border-1: #ECECEC;
+    --color-border-2: #D0DAE9;
+    --color-border-3: #E2E2E2;
+    --color-border-4: #D7DCE3;
+    --color-border-5: #2F466A;
+
+    /* FONT SIZES */
+    --fs-heading-1: 3.4375rem;
+    --fs-heading-4: 1.875rem;
+    --fs-normal: 1rem;
+    --fs-medium: 1.125rem;
+    --fs-small: 0.875rem;
+    --fs-btn: 1rem;
+
+    /* FONT FAMILIES */
+    --ff-lexend: 'Lexend Deca', sans-serif;
+    --ff-hind: 'Hind', sans-serif;
+
+    /* FONT WEIGHTS */
+    --fw-extra-bold: 800;
+    --fw-bold: 700;
+    --fw-semi-bold: 600;
+    --fw-medium: 500;
+    --fw-regular: 400;
+    --fw-light: 300;
+
+    /* LINE HEIGHTS */
+    --heading-line-height: 1.2;
+    --body-line-height: 1.75;
+}
