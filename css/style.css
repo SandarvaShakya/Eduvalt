@@ -76,7 +76,15 @@ body{
     }
 }
 
-@media (min-width: 1200px){}
+@media (min-width: 1200px){
+    .container{
+        padding: 0 150px;
+    }
+
+    .container--nav{
+        padding: 0 85px;
+    }
+}
 
 @media (min-width: 1500px) {
     .container{
@@ -140,6 +148,10 @@ body{
     color: var(--color-white);
 } 
 
+.btn--primary:hover{
+    background-color: var(--color-dark-blue);
+}
+
 .btn--img{
     margin: 0 auto;
     display: flex;
@@ -168,6 +180,9 @@ nav{
     width: 100%;
     position: absolute;
     top: 0;
+}
+
+.nav--transition{
     transition: all 1s ease-in-out;
 }
 
@@ -351,6 +366,10 @@ nav{
 
     .nav__item:hover{
         color: var(--color-primary);
+    }
+
+    .nav--scroll .nav__item{
+        padding: 14px 12px;
     }
 
     .sub-menu{
@@ -667,6 +686,14 @@ nav{
         text-align: left;
     }
 
+    .hero-heading{
+        max-width: 95%;
+    }
+
+    .hero-paragraph{
+        width: 70%;
+    }
+
     .hero-extra{
         justify-content: flex-start;
     }
@@ -692,7 +719,15 @@ nav{
     }
 
     .hero-paragraph{
-        max-width: 80%;
+        max-width: 70%;
+    }
+
+    .saturn img{
+        width: 100%;
+    }
+
+    .saturn{
+        left: -100px;
     }
 
     .rain{
@@ -701,11 +736,4 @@ nav{
 }
 
 @media (min-width: 1500px){
-    .saturn img{
-        width: 100%;
-    }
-
-    .saturn{
-        left: -100px;
-    }
 }
