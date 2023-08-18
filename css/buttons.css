@@ -1,0 +1,59 @@
+/******************************
+    BUTTONS
+******************************/
+.btn{
+    display: inline-block;
+    cursor: pointer;
+    padding: 0.875rem 1.3125rem;
+    
+    border: none;
+    border-radius: 4px;
+    
+    font-family: var(--ff-hind);
+    font-weight: var(--fw-medium);
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.btn--white{
+    color: var(--color-blue-1);
+    border: 1px solid var(--color-border-2);
+    background-color: var(--color-white);
+}
+
+.btn--white:hover{
+    background-color: var(--color-dark-blue);
+    color: var(--color-white);
+}
+
+.btn--primary{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+} 
+
+.btn--primary:hover{
+    background-color: var(--color-dark-blue);
+}
+
+.btn--img{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 19px 24px 16px;
+}
+
+.btn--search{
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background-color: transparent;
+}
+
+.btn--search:hover{
+    filter: invert(32%) sepia(76%) saturate(1355%) hue-rotate(190deg) brightness(98%) contrast(99%);
+}
