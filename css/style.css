@@ -65,6 +65,7 @@ body{
 
 .container{
     width: 100%;
+    max-width: 540px;
     padding: 0 15px;
     margin: 0 auto;
     position: relative;
@@ -72,21 +73,24 @@ body{
 
 @media (min-width: 768px){
     .container{
+        max-width: 720px;
         padding: 0 30px;
     }
 }
 
 @media (min-width: 992px){
     .container{
+        max-width: 960px;
         padding: 0 40px;
     }
 }
 
 @media (min-width: 1200px){
     .container{
+        max-width: 1500px;
         padding: 0 150px;
     }
-
+    
     .container--nav{
         padding: 0 85px;
     }
@@ -94,7 +98,7 @@ body{
 
 @media (min-width: 1500px) {
     .container{
-        max-width: 1400px;
+        max-width: 1600px;
     }
 
     .container--nav{
@@ -115,6 +119,12 @@ section{
 
 .section--carousel{
     border-bottom: 1px solid var(--color-gray-2);
+}
+
+.section--blog{
+    background-color: #f5f7fb;
+    padding: 205px 0 90px;
+    margin-top: 185px;
 }
 
 .flex{

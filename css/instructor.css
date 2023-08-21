@@ -11,7 +11,8 @@
     margin: 0 auto;
 }
 
-.instructor-heading{
+.instructor-heading,
+.blog-heading{
     font-family: var(--ff-lexend);
     margin: 13px 0 15px;
     font-size: 29px;
