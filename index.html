@@ -1,823 +1,962 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
-    <!-- FAVICON -->
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/resets.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/buttons.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/hero.css">
-    <link rel="stylesheet" href="css/instructor.css">
-    <link rel="stylesheet" href="css/blog.css">
-    <link rel="stylesheet" href="css/newsletter.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <title>Eduvalt - Online Courses & Education Template</title>
-</head>
-<body>
-    <!-- HEADER & NAVIGATION -->
-    <header>
-        <nav>
-            <div class="container container--nav">
-                <div class="nav__content-wrapper flex">
-                    <!-- LOGO -->
-                    <a href="/" class="logo">
-                        <img src="assets/logo.png" alt="logo">
-                    </a>
-                    <!-- NAV ITEMS -->
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#" class="nav__link active">
-                                Home
-                                <span class="img-wrapper">
-                                    <img src="assets/icons/arrow_down.svg" alt="arrow">
-                                </span>
-                            </a>
-                            <ul class="sub-menu">
-                                <li class="sub-menu__item active">
-                                    <a href="#" class="sub-menu__link">Home One</a>
-                                </li>
-                                <li class="sub-menu__item">
-                                    <a href="#" class="sub-menu__link">Home Two</a>
-                                </li>
-                                <li class="sub-menu__item">
-                                    <a href="#" class="sub-menu__link">Home Three</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">
-                                Courses
-                                <span class="img-wrapper">
-                                    <img src="assets/icons/arrow_down.svg" alt="arrow">
-                                </span>
-                            </a>
-                            <ul class="sub-menu">
-                                <li class="sub-menu__item">
-                                    <a href="#" class="sub-menu__link">All Courses</a>
-                                </li>
-                                <li class="sub-menu__item">
-                                    <a href="#" class="sub-menu__link">Course Details</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">
-                                Pages
-                                <span class="img-wrapper">
-                                    <img src="assets/icons/arrow_down.svg" alt="arrow">
-                                </span>
-                            </a>
-                            <ul class="sub-menu">
-                                <li class="sub-menu__item">
-                                    <a href="#" class="sub-menu__link">About Us</a>
-                                </li>
-                                <li class="sub-menu__item">
-                                    <a href="#" class="sub-menu__link">Our Instructors</a>
-                                </li>
-                                <li class="sub-menu__item">
-                                    <a href="#" class="sub-menu__link">Instructor Details</a>
-                                </li>
-                                <li class="sub-menu__item">
-                                    <a href="#" class="sub-menu__link">Our Mentors</a>
-                                </li>
-                                <li class="sub-menu__item">
-                                    <a href="#" class="sub-menu__link">Our Events</a>
-                                </li>
-                                <li class="sub-menu__item">
-                                    <a href="#" class="sub-menu__link">Event Details</a>
-                                </li>
-                                <li class="sub-menu__item">
-                                    <a href="#" class="sub-menu__link">Asked Questions</a>
-                                </li>
-                                <li class="sub-menu__item">
-                                    <a href="#" class="sub-menu__link">404 Page</a>
-                                </li>
-                                <li class="sub-menu__item">
-                                    <a href="#" class="sub-menu__link">Contact</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">
-                                Shop
-                                <span class="img-wrapper">
-                                    <img src="assets/icons/arrow_down.svg" alt="arrow">
-                                </span>
-                            </a>
-                            <ul class="sub-menu">
-                                <li class="sub-menu__item">
-                                    <a href="#" class="sub-menu__link">Shop Page</a>
-                                </li>
-                                <li class="sub-menu__item">
-                                    <a href="#" class="sub-menu__link">Shop Details</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">
-                                Blog
-                                <span class="img-wrapper">
-                                    <img src="assets/icons/arrow_down.svg" alt="arrow">
-                                </span>
-                            </a>
-                            <ul class="sub-menu">
-                                <li class="sub-menu__item">
-                                    <a href="#" class="sub-menu__link">Blog Grid</a>
-                                </li>
-                                <li class="sub-menu__item">
-                                    <a href="#" class="sub-menu__link">Blog Standard</a>
-                                </li>
-                                <li class="sub-menu__item">
-                                    <a href="#" class="sub-menu__link">Blog Details</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <!-- INPUT BAR -->
-                    <form class="filter-bar">
-                        <div class="select-wrapper">
-                            <div class="filter-bar__categories-title">
-                                <div class="img-wrapper">
-                                    <img src="assets/icons/categories.svg" alt="categories">
-                                </div>
-                                <p class="select-text">Categories</p>
-                                <div class="img-wrapper">
-                                    <img src="assets/icons/arrow_down.svg" alt="arrw-down">
-                                </div>
-                            </div>
-                            <ul class="select-list d-none" id="select">
-                                <li class="select-list__item">
-                                    <a href="#" class="select-list__link">Categories</a>
-                                </li>
-                                <li class="select-list__item">
-                                    <a href="#" class="select-list__link">Business</a>
-                                </li>
-                                <li class="select-list__item">
-                                    <a href="#" class="select-list__link">Data Science</a>
-                                </li>
-                                <li class="select-list__item">
-                                    <a href="#" class="select-list__link">Art & Design</a>
-                                </li>
-                                <li class="select-list__item">
-                                    <a href="#" class="select-list__link">Marketing</a>
-                                </li>
-                                <li class="select-list__item">
-                                    <a href="#" class="select-list__link">Finance</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <input type="text" placeholder="Search For Course . . ." class="filter-bar__input">
-                        <button class="btn btn--search">
-                            <span class="img-wrapper">
-                                <img src="assets/icons/search.svg" alt="search">
-                            </span>
-                        </button>
-                    </form>
-                    <div class="divider"></div>
-                    <!-- CART -->
-                    <div class="shopping-bag">
-                        <div class="img-wrapper">
-                            <img src="assets/icons/shopping-bag.png" alt="shopping-bag">
-                        </div>
-                        <p class="item-number flex flex--center">0</p>
-                    </div>
-                    <!-- MOBILE MENU -->
-                    <div class="img-wrapper menu">
-                        <img src="assets/icons/menu.png" alt="menu">
-                    </div>
-                    <!-- DESKTOP BUTTONS -->
-                    <div class="button-group">
-                        <a href="#" class="btn btn--white">Log In</a>
-                        <a href="#" class="btn btn--primary try-for-free">Try For Free</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <!-- HEADER & NAVIGATION END -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- MAIN SECTION -->
-    <main>
-        <!-- HERO SECTION -->
-        <section class="section--hero">
-            <div class="container">
-                <div class="hero">
-                    <div class="hero-content">
-                        <div class="vector-image-group vector-image-group--back">
-                            <div class="img-wrapper saturn">
-                                <img src="assets/icons/saturn.png" alt="saturn">
-                            </div>
-                            <div class="img-wrapper rain">
-                                <img src="assets/icons/rain.png" alt="rain">
-                            </div>
-                        </div>
-                        <span class="sub-title">100% Satisfaction Guarantee</span>
-                        <h1 class="hero-heading">Learn <span class="hero-heading--blue">Skills</span> From Our Top Instructors</h1>
-                        <p class="hero-paragraph">
-                            Borem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattisBorem ipsum dolor sit amet consectetur adipiscing area we followelit.
-                        </p>
-                        <div class="hero-extra">
-                            <a href="#" class="btn btn--primary btn--img">
-                                EXPLORE COURSES
-                                <span class="img-wrapper img-wrapper--arrow">
-                                    <img src="assets/icons/arrow-right.svg" alt="arrow-right">
-                                </span>
-                            </a>
-                            <div class="contact flex">
-                                <div class="img-wrapper">
-                                    <img src="assets/icons/call.png" alt="telephone">
-                                </div>
-                                <div class="contact__text">
-                                    <h5>Have Any Questions?</h5>
-                                    <a href="tel:993-00-67777">993-00-67777</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hero-image">
-                        <div class="vector-image-group">
-                            <div class="img-wrapper paper">
-                                <img src="assets/icons/paper.png" alt="paper">
-                            </div>
-                            <div class="img-wrapper ruler">
-                                <img src="assets/icons/divider.png" alt="ruler">
-                            </div>
-                            <div class="img-wrapper arrow">
-                                <img src="assets/icons/vector_arrow.png" alt="arrow">
-                            </div>
-                        </div>
-                        <div class="hero-cards">
-                            <div class="hero-card">
-                                <div class="img-wrapper img-wrapper--green">
-                                    <img src="assets/icons/group.png" alt="group of people">
-                                </div>
-                                <p class="hero-card__text">Total Students</p>
-                                <p class="hero-card__number">15K</p>
-                            </div>
-                            <div class="hero-card hero-card--graduation">
-                                <div class="img-wrapper img-wrapper--purple">
-                                    <img src="assets/icons/hat.svg" alt="graduation hat">
-                                </div>
-                                <p class="hero-card__text">Complete Graduation</p>
-                                <p class="hero-card__number">34K</p>
-                            </div>
-                        </div>
-                        <div class="img-wrapper">
-                            <img src="assets/images/banner_img.png" alt="women with pen and paper">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- HERO SECTION END -->
-        <!-- BRAND SLIDER SECTION -->
-        <div class="carousel-wrapper">
-            <div class="container">
-                <div class="carousel flex" id="carousel">
-                    <div class="img-wrapper img-wrapper--carousel">
-                        <img 
-                            src="assets/images/amd.png" 
-                            alt="amd logo"
-                            loading="lazy"
-                        >
-                    </div>
-                    <div class="img-wrapper img-wrapper--carousel">
-                        <img 
-                            src="assets/images/amazon.png" 
-                            alt="amazon logo"
-                            loading="lazy"
-                        >
-                    </div>
-                    <div class="img-wrapper img-wrapper--carousel">
-                        <img 
-                            src="assets/images/walmart.png" 
-                            alt="walmart logo"
-                            loading="lazy"
-                        >
-                    </div>
-                    <div class="img-wrapper img-wrapper--carousel">
-                        <img 
-                            src="assets/images/adobe.png" 
-                            alt="adobe logo"
-                            loading="lazy"
-                        >
-                    </div>
-                    <div class="img-wrapper img-wrapper--carousel">
-                        <img 
-                            src="assets/images/coursera.png" 
-                            alt="coursera logo"
-                            loading="lazy"
-                        >
-                    </div>
-                    <div class="img-wrapper img-wrapper--carousel">
-                        <img 
-                            src="assets/images/perncilbox.png" 
-                            alt="perncilbox.png logo"
-                            loading="lazy"
-                        >
-                    </div>
-                    <div class="img-wrapper img-wrapper--carousel">
-                        <img 
-                            src="assets/images/udemy.png" 
-                            alt="udemy logo"
-                            loading="lazy"
-                        >
-                    </div>
-                    <div class="img-wrapper img-wrapper--carousel" id="first-image">
-                        <img 
-                            src="assets/images/amd.png" 
-                            alt="amd logo"
-                            loading="lazy"
-                        >
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- BRAND SLIDER SECTION END -->
-        <!-- DISCOVER SECTION -->
-        <section>
-            <div class="container container--discover">
-                <div class="discover-image">
-                    <div class="vector-image-group">
-                        <div class="img-wrapper dots">
-                            <img src="assets/icons/about_dots.svg.svg" alt="dots">
-                        </div>
-                    </div>
-                    <div class="abs-discover-content">
-                        <h4>12+</h4>
-                        <p>Years of Experiences</p>
-                    </div>
-                    <div class="img-wrapper">
-                        <img src="assets/images/discover-women.png" alt="women">
-                    </div>
-                    <div class="img-wrapper">
-                        <img src="assets/images/dicoverman.png" alt="man">
-                    </div>
-                </div>
-                <div class="discover-content">
-                    <span class="sub-title">Get To Know About Us</span>
-                    <h3 class="discover-heading">
-                        Discover Top <span class="hero-heading--blue">Instructors</span> Around The World
-                    </h3>
-                    <p class="discover-paragraph">
-                        Borem ipsum dolor sit amet, consectetur adipiscing eliawe awUt elit ellus, luctus nec ullamcorper
-                        mattisBorem ipsum dolor awes atnse awctetur adipis we followelit. Borem.
-                    </p>
-                    <div class="features-group">
-                        <div class="feature-item">
-                            <div class="img-wrapper flex flex--center">
-                                <img src="assets/icons/feature1.svg" alt="icon">
-                            </div>
-                            <div class="feature-content">
-                                <p>2000+</p>
-                                <p>Expert Tutors</p>
-                            </div>
-                        </div>
-                        <div class="feature-item">
-                            <div class="img-wrapper flex flex--center">
-                                <img src="assets/icons/feature2.svg" alt="icon">
-                            </div>
-                            <div class="feature-content">
-                                <p>1500+</p>
-                                <p>Top Lessons</p>
-                            </div>
-                        </div>
-                        <div class="feature-item">
-                            <div class="img-wrapper flex flex--center">
-                                <img src="assets/icons/feature4.svg" alt="icon">
-                            </div>
-                            <div class="feature-content">
-                                <p>18000+</p>
-                                <p>Over Student<p>
-                            </div>
-                        </div>
-                        <div class="feature-item">
-                            <div class="img-wrapper flex flex--center">
-                                <img src="assets/icons/feature3.svg" alt="icon">
-                            </div>
-                            <div class="feature-content">
-                                <p>3200+</p>
-                                <p>Pro Videos</p>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="#" class="btn btn--primary btn--img">
-                        DISCOVER MORE
-                        <span class="img-wrapper img-wrapper--arrow">
-                            <img src="assets/icons/arrow-right.svg" alt="arrow">
-                        </span>
-                    </a>
-                </div>
-            </div>
-        </section>
-        <!-- DISCOVER SECTION END-->
-        <!-- INSTRUCTOR SECTION -->
-        <section>
-            <div class="container">
-                <div class="instructor-title">
-                    <div class="instructor-title__left">
-                        <span class="sub-title">Our Qualified People Matter</span>
-                        <h3 class="instructor-heading">
-                            Top <span class="hero-heading--blue">Class</span> Instructor
-                        </h3>
-                    </div>
-                    <a href="#" class="btn btn--primary btn--img">
-                        ALL INSTRUCTORS
-                        <span class="img-wrapper img-wrapper--arrow">
-                            <img src="assets/icons/arrow-right.svg" alt="arrow-right">
-                        </span>
-                    </a>
-                </div>
-                <div class="instructor-img-group">
-                    <div class="instructor-wrapper">
-                        <div class="instructor-img">
-                            <div class="instructor-background instructor-background--1"></div>
-                            <div class="img-wrapper">
-                                <img src="assets/images/instructor1.png" alt="instructor">
-                            </div>
-                        </div>
-                        <div class="instructor-content">
-                            <div class="instructor-info">
-                                <h4 class="instructor-post">Graphic Design</h4>
-                                <h3 class="instructor-name">Robert Smith</h3>
-                            </div>
-                            <div class="share-img-group">
-                                <div class="img-wrapper img-wrapper--share flex flex--center">
-                                    <img src="assets/icons/share.svg" alt="share">
-                                </div>
-                                <div class="share-social-group">
-                                    <div class="img-wrapper img-wrapper--social flex flex--center">
-                                        <img src="assets/icons/youtube.svg" alt="youtube">
-                                    </div>
-                                    <div class="img-wrapper img-wrapper--social img-wrapper--social-1 flex flex--center">
-                                        <img src="assets/icons/linkedin.svg" alt="linkedin">
-                                    </div>
-                                    <div class="img-wrapper img-wrapper--social img-wrapper--social-2 flex flex--center">
-                                        <img src="assets/icons/twitter.svg" alt="twitter">
-                                    </div>
-                                    <div class="img-wrapper img-wrapper--social img-wrapper--social-3 flex flex--center">
-                                        <img src="assets/icons/facebook.svg" alt="facebook">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="instructor-wrapper">
-                        <div class="instructor-img">
-                            <div class="instructor-background instructor-background--2"></div>
-                            <div class="img-wrapper">
-                                <img src="assets/images/instructor2.png" alt="instructor">
-                            </div>
-                        </div>
-                        <div class="instructor-content">
-                            <div class="instructor-info">
-                                <h4 class="instructor-post">Web Design</h4>
-                                <h3 class="instructor-name">Olivia Mia</h3>
-                            </div>
-                            <div class="share-img-group">
-                                <div class="img-wrapper img-wrapper--share flex flex--center">
-                                    <img src="assets/icons/share.svg" alt="share">
-                                </div>
-                                <div class="share-social-group">
-                                    <div class="img-wrapper img-wrapper--social flex flex--center">
-                                        <img src="assets/icons/youtube.svg" alt="youtube">
-                                    </div>
-                                    <div class="img-wrapper img-wrapper--social img-wrapper--social-1 flex flex--center">
-                                        <img src="assets/icons/linkedin.svg" alt="linkedin">
-                                    </div>
-                                    <div class="img-wrapper img-wrapper--social img-wrapper--social-2 flex flex--center">
-                                        <img src="assets/icons/twitter.svg" alt="twitter">
-                                    </div>
-                                    <div class="img-wrapper img-wrapper--social img-wrapper--social-3 flex flex--center">
-                                        <img src="assets/icons/facebook.svg" alt="facebook">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="instructor-wrapper">
-                        <div class="instructor-img">
-                            <div class="instructor-background instructor-background--3"></div>
-                            <div class="img-wrapper">
-                                <img src="assets/images/instructor3.png" alt="instructor">
-                            </div>
-                        </div>
-                        <div class="instructor-content">
-                            <div class="instructor-info">
-                                <h4 class="instructor-post">Digital Marketing</h4>
-                                <h3 class="instructor-name">William Hope</h3>
-                            </div>
-                            <div class="share-img-group">
-                                <div class="img-wrapper img-wrapper--share flex flex--center">
-                                    <img src="assets/icons/share.svg" alt="share">
-                                </div>
-                                <div class="share-social-group">
-                                    <div class="img-wrapper img-wrapper--social flex flex--center">
-                                        <img src="assets/icons/youtube.svg" alt="youtube">
-                                    </div>
-                                    <div class="img-wrapper img-wrapper--social img-wrapper--social-1 flex flex--center">
-                                        <img src="assets/icons/linkedin.svg" alt="linkedin">
-                                    </div>
-                                    <div class="img-wrapper img-wrapper--social img-wrapper--social-2 flex flex--center">
-                                        <img src="assets/icons/twitter.svg" alt="twitter">
-                                    </div>
-                                    <div class="img-wrapper img-wrapper--social img-wrapper--social-3 flex flex--center">
-                                        <img src="assets/icons/facebook.svg" alt="facebook">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="instructor-wrapper">
-                        <div class="instructor-img">
-                            <div class="instructor-background instructor-background--4"></div>
-                            <div class="img-wrapper">
-                                <img src="assets/images/instructor4.png" alt="instructor">
-                            </div>
-                        </div>
-                        <div class="instructor-content">
-                            <div class="instructor-info">
-                                <h4 class="instructor-post">Web Development</h4>
-                                <h3 class="instructor-name">Sophia Ava</h3>
-                            </div>
-                            <div class="share-img-group">
-                                <div class="img-wrapper img-wrapper--share flex flex--center">
-                                    <img src="assets/icons/share.svg" alt="share">
-                                </div>
-                                <div class="share-social-group">
-                                    <div class="img-wrapper img-wrapper--social flex flex--center">
-                                        <img src="assets/icons/youtube.svg" alt="youtube">
-                                    </div>
-                                    <div class="img-wrapper img-wrapper--social img-wrapper--social-1 flex flex--center">
-                                        <img src="assets/icons/linkedin.svg" alt="linkedin">
-                                    </div>
-                                    <div class="img-wrapper img-wrapper--social img-wrapper--social-2 flex flex--center">
-                                        <img src="assets/icons/twitter.svg" alt="twitter">
-                                    </div>
-                                    <div class="img-wrapper img-wrapper--social img-wrapper--social-3 flex flex--center">
-                                        <img src="assets/icons/facebook.svg" alt="facebook">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- INSTRUCTOR SECTION END-->
-        <!-- BLOG SECTION -->
-        <section class="section--blog">
-            <div class="container">
-                <div class="instructor-extra">
-                    <div class="vector-image-group">
-                        <div class="img-wrapper sun">
-                            <img src="assets/icons/sun.svg" alt="sun">
-                        </div>
-                        <div class="img-wrapper shape">
-                            <img src="assets/icons/bg-shape.svg" alt="shape">
-                        </div>
-                    </div>
-                    <h3 class="instructor-extra__heading">Join Us & Spread Experiences</h3>
-                    <div class="instructor-extra__content">
-                        <p>
-                            Borem ipsum dolor sit amet, consectetur adipiscing eliawe awUt elit ellus, luctus
-                            nec ullamcorper mattisBorem
-                        </p>
-                        <a href="#" class="btn btn--img">
-                            BECOME AN INSTRUCTOR
-                            <span class="img-wrapper img-wrapper--arrow">
-                                <img src="assets/icons/arrow-right-blue.svg" alt="arrow">
-                            </span>
-                        </a>
-                    </div>
-                </div>
-                <div class="blog-title">
-                    <span class="sub-title">Always Smart To Hear News</span>
-                    <h3 class="blog-heading">Latest <span class="hero-heading--blue">News</span> & Blog</h3>
-                    <p class="blog-title__paragraph">
-                        Receive huge benefits with our lifetime Plumbing
-                        Receive huge benefits with our lifetime Plumbing
-                        email address will be shown
-                    </p>
-                </div>
-                <div class="blog-card-group">
-                    <div class="blog-card-wrapper">
-                        <div class="blog-card">
-                            <div class="img-wrapper">
-                                <img src="assets/images/blog1.jpg" alt="blog image">
-                            </div>
-                            <div class="blog-card__content">
-                                <a href="#" class="blog-tag">Education</a>
-                                <h5 class="blog-card__heading">
-                                    <a href="#">when aeunkno printer took galley of scrambled</a>
-                                </h5>
-                                <div class="blog-info">
-                                    <a href="#" class="blog-author">
-                                        <span class="img-wrapper">
-                                            <img src="assets/icons/man.svg" alt="man">
-                                        </span>
-                                        <span>by Admin</span>
-                                    </a>
-                                    <a href="#" class="blog-date">
-                                        <span class="img-wrapper">
-                                            <img src="assets/icons/calendar.svg" alt="calendar">
-                                        </span>
-                                        <span>23 Aug, 2023</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="blog-card-wrapper">
-                        <div class="blog-card">
-                            <div class="img-wrapper">
-                                <img src="assets/images/blog2.jpg" alt="blog image">
-                            </div>
-                            <div class="blog-card__content">
-                                <a href="#" class="blog-tag">Course</a>
-                                <h5 class="blog-card__heading">
-                                    <a href="#">Full Stack GraphQL With Next.js And Vercel</a>
-                                </h5>
-                                <div class="blog-info">
-                                    <a href="#" class="blog-author">
-                                        <span class="img-wrapper">
-                                            <img src="assets/icons/man.svg" alt="man">
-                                        </span>
-                                        <span>by Admin</span>
-                                    </a>
-                                    <a href="#" class="blog-date">
-                                        <span class="img-wrapper">
-                                            <img src="assets/icons/calendar.svg" alt="calendar">
-                                        </span>
-                                        <span>24 Aug, 2023</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="blog-card-wrapper">
-                        <div class="blog-card">
-                            <div class="img-wrapper">
-                                <img src="assets/images/blog3.jpg" alt="blog image">
-                            </div>
-                            <div class="blog-card__content">
-                                <a href="#" class="blog-tag">Skill Development</a>
-                                <h5 class="blog-card__heading">
-                                    <a href="#">What Leonardo Teach us About Web Design</a>
-                                </h5>
-                                <div class="blog-info">
-                                    <a href="#" class="blog-author">
-                                        <span class="img-wrapper">
-                                            <img src="assets/icons/man.svg" alt="man">
-                                        </span>
-                                        <span>by Admin</span>
-                                    </a>
-                                    <a href="#" class="blog-date">
-                                        <span class="img-wrapper">
-                                            <img src="assets/icons/calendar.svg" alt="calendar">
-                                        </span>
-                                        <span>24 Aug, 2023</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- BLOG SECTION END -->
-        <!-- NEWSLETTER SECTION -->
-        <section>
-            <div class="container">
-                <div class="newsletter-wrapper">
-                    <div class="newsletter-content">
-                        <div class="img-wrapper">
-                            <img src="assets/images/newsletter.png" alt="newsletter">
-                        </div>
-                        <h2 class="newsletter-heading">Let's Join To Our Newsletters</h2>
-                    </div>
-                    <form class="newsletter-form">
-                        <input type="email" class="newsletter-form__input" placeholder="Enter Your Email">
-                        <input type="submit" class="btn btn--primary btn--newsletter" value="SUBSCRIBE NOW">
-                    </form>
-                </div>
-            </div>
-        </section>
-        <!-- NEWSLETTER SECTION END -->
-    </main>
-    <!-- MAIN SECTION END -->
+		<!-- FONTS -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
 
-    <!-- FOOTER -->
-    <footer>
-        <div class="container">
-            <div class="footer__top-content">
-                <div class="footer-main">
-                    <a href="/" class="logo">
-                        <span class="img-wrapper">
-                            <img src="assets/logo-white.png" alt="logo">
-                        </span>
-                    </a>
-                    <p class="footer-main__content">
-                        when an unknown printer took galley of type and
-                        scrambled it to make pspecimen bookt has.
-                    </p>
-                    <p class="location">
-                        463 7th Ave, NY 10018, USA
-                    </p>
-                    <p class="number">+123 88 9900 456</p>
-                    <div class="social-group">
-                        <a href="#" class="social">
-                            <span class="img-wrapper">
-                                <img src="assets/icons/facebook.svg" alt="facebook">
-                            </span>
-                        </a>
-                        <a href="#" class="social">
-                            <span class="img-wrapper">
-                                <img src="assets/icons/twitter.svg" alt="twitter">
-                            </span>
-                        </a>
-                        <a href="#" class="social">
-                            <span class="img-wrapper">
-                                <img src="assets/icons/whatsapp.svg" alt="whatsapp">
-                            </span>
-                        </a>
-                        <a href="#" class="social">
-                            <span class="img-wrapper">
-                                <img src="assets/icons/linkedin.svg" alt="linkedin">
-                            </span>
-                        </a>
-                        <a href="#" class="social">
-                            <span class="img-wrapper">
-                                <img src="assets/icons/youtube.svg" alt="youtube">
-                            </span>
-                        </a>
-                    </div>
-                </div>
-                <div class="footer-list-wrapper">
-                    <h3 class="footer-list__heading">Resources</h3>
-                    <ul class="footer-list">
-                        <li class="footer-list__item"><a href="#" class="footer-list__link">About</a></li>
-                        <li class="footer-list__item"><a href="#" class="footer-list__link">Contact</a></li>
-                        <li class="footer-list__item"><a href="#" class="footer-list__link">Help Center</a></li>
-                        <li class="footer-list__item"><a href="#" class="footer-list__link">Refund</a></li>
-                        <li class="footer-list__item"><a href="#" class="footer-list__link">Conditions</a></li>
-                        <li class="footer-list__item"><a href="#" class="footer-list__link">Privacy Policy</a></li>
-                    </ul>
-                </div>
-                <div class="footer-list-wrapper">
-                    <h3 class="footer-list__heading">Courses</h3>
-                    <ul class="footer-list">
-                        <li class="footer-list__item"><a href="#" class="footer-list__link">Life Coach</a></li>
-                        <li class="footer-list__item"><a href="#" class="footer-list__link">Health Coach</a></li>
-                        <li class="footer-list__item"><a href="#" class="footer-list__link">Business Coach</a></li>
-                        <li class="footer-list__item"><a href="#" class="footer-list__link">Development</a></li>
-                        <li class="footer-list__item"><a href="#" class="footer-list__link">Web Design</a></li>
-                        <li class="footer-list__item"><a href="#" class="footer-list__link">SEO Optimize</a></li>
-                    </ul>
-                </div>
-                <div class="working-hours-wrapper">
-                    <h3 class="working-hours__heading">Working Hours</h3>
-                    <div class="timing-wrapper">
-                        <p class="days">Mon - Fri</p>
-                        <p class="timing">8:00 AM - 5:00 PM</p>
-                    </div>
-                    <hr>
-                    <div class="timing-wrapper">
-                        <p class="days">Mon - Fri</p>
-                        <p class="timing">9:00 AM - 6:00 PM</p>
-                    </div>
-                    <hr>
-                    <div class="timing-wrapper">
-                        <p class="days">Mon - Fri</p>
-                        <p class="timing">10:00 AM - 8:00 PM</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div class="container">
-            <div class="footer__bottom-content">
-                <p class="copyright">Copyright &copy; 2023 Eduvalt. All Rights Reserved.</p>
-                <ul class="footer-extra">
-                    <li class="footer-extra__item"><a href="#" class="footer-extra__link">Privacy Policy</a></li>
-                    <li class="footer-extra__item">.</li>
-                    <li class="footer-extra__item"><a href="#" class="footer-extra__link">Terms & Conditions</a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-    <!-- FOOTER END -->
-    <script src="js/index.js"></script>
-</body>
+		<!-- FAVICON -->
+		<link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/resets.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/buttons.css" />
+		<link rel="stylesheet" href="css/nav.css" />
+		<link rel="stylesheet" href="css/hero.css" />
+		<link rel="stylesheet" href="css/discover.css" />
+		<link rel="stylesheet" href="css/instructor.css" />
+		<link rel="stylesheet" href="css/blog.css" />
+		<link rel="stylesheet" href="css/newsletter.css" />
+		<link rel="stylesheet" href="css/footer.css" />
+		<title>Eduvalt - Online Courses & Education Template</title>
+	</head>
+	<body>
+		<!-- HEADER & NAVIGATION -->
+		<header>
+			<nav>
+				<div class="container container--nav">
+					<div class="nav__content-wrapper flex">
+						<!-- LOGO -->
+						<a href="/" class="logo">
+							<img src="assets/logo.png" alt="logo" />
+						</a>
+						<!-- NAV ITEMS -->
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a href="#" class="nav__link active">
+									Home
+									<span class="img-wrapper">
+										<img src="assets/icons/arrow_down.svg" alt="arrow" />
+									</span>
+								</a>
+								<ul class="sub-menu">
+									<li class="sub-menu__item active">
+										<a href="#" class="sub-menu__link">Home One</a>
+									</li>
+									<li class="sub-menu__item">
+										<a href="#" class="sub-menu__link">Home Two</a>
+									</li>
+									<li class="sub-menu__item">
+										<a href="#" class="sub-menu__link">Home Three</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									Courses
+									<span class="img-wrapper">
+										<img src="assets/icons/arrow_down.svg" alt="arrow" />
+									</span>
+								</a>
+								<ul class="sub-menu">
+									<li class="sub-menu__item">
+										<a href="#" class="sub-menu__link">All Courses</a>
+									</li>
+									<li class="sub-menu__item">
+										<a href="#" class="sub-menu__link">Course Details</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									Pages
+									<span class="img-wrapper">
+										<img src="assets/icons/arrow_down.svg" alt="arrow" />
+									</span>
+								</a>
+								<ul class="sub-menu">
+									<li class="sub-menu__item">
+										<a href="#" class="sub-menu__link">About Us</a>
+									</li>
+									<li class="sub-menu__item">
+										<a href="#" class="sub-menu__link">Our Instructors</a>
+									</li>
+									<li class="sub-menu__item">
+										<a href="#" class="sub-menu__link">Instructor Details</a>
+									</li>
+									<li class="sub-menu__item">
+										<a href="#" class="sub-menu__link">Our Mentors</a>
+									</li>
+									<li class="sub-menu__item">
+										<a href="#" class="sub-menu__link">Our Events</a>
+									</li>
+									<li class="sub-menu__item">
+										<a href="#" class="sub-menu__link">Event Details</a>
+									</li>
+									<li class="sub-menu__item">
+										<a href="#" class="sub-menu__link">Asked Questions</a>
+									</li>
+									<li class="sub-menu__item">
+										<a href="#" class="sub-menu__link">404 Page</a>
+									</li>
+									<li class="sub-menu__item">
+										<a href="#" class="sub-menu__link">Contact</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									Shop
+									<span class="img-wrapper">
+										<img src="assets/icons/arrow_down.svg" alt="arrow" />
+									</span>
+								</a>
+								<ul class="sub-menu">
+									<li class="sub-menu__item">
+										<a href="#" class="sub-menu__link">Shop Page</a>
+									</li>
+									<li class="sub-menu__item">
+										<a href="#" class="sub-menu__link">Shop Details</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									Blog
+									<span class="img-wrapper">
+										<img src="assets/icons/arrow_down.svg" alt="arrow" />
+									</span>
+								</a>
+								<ul class="sub-menu">
+									<li class="sub-menu__item">
+										<a href="#" class="sub-menu__link">Blog Grid</a>
+									</li>
+									<li class="sub-menu__item">
+										<a href="#" class="sub-menu__link">Blog Standard</a>
+									</li>
+									<li class="sub-menu__item">
+										<a href="#" class="sub-menu__link">Blog Details</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<!-- INPUT BAR -->
+						<form class="filter-bar">
+							<div class="select-wrapper">
+								<div class="filter-bar__categories-title">
+									<div class="img-wrapper">
+										<img src="assets/icons/categories.svg" alt="categories" />
+									</div>
+									<p class="select-text">Categories</p>
+									<div class="img-wrapper">
+										<img src="assets/icons/arrow_down.svg" alt="arrw-down" />
+									</div>
+								</div>
+								<ul class="select-list d-none" id="select">
+									<li class="select-list__item">
+										<a href="#" class="select-list__link">Categories</a>
+									</li>
+									<li class="select-list__item">
+										<a href="#" class="select-list__link">Business</a>
+									</li>
+									<li class="select-list__item">
+										<a href="#" class="select-list__link">Data Science</a>
+									</li>
+									<li class="select-list__item">
+										<a href="#" class="select-list__link">Art & Design</a>
+									</li>
+									<li class="select-list__item">
+										<a href="#" class="select-list__link">Marketing</a>
+									</li>
+									<li class="select-list__item">
+										<a href="#" class="select-list__link">Finance</a>
+									</li>
+								</ul>
+							</div>
+							<input
+								type="text"
+								placeholder="Search For Course . . ."
+								class="filter-bar__input"
+							/>
+							<button class="btn btn--search">
+								<span class="img-wrapper">
+									<img src="assets/icons/search.svg" alt="search" />
+								</span>
+							</button>
+						</form>
+						<div class="divider"></div>
+						<!-- CART -->
+						<div class="shopping-bag">
+							<div class="img-wrapper">
+								<img src="assets/icons/shopping-bag.png" alt="shopping-bag" />
+							</div>
+							<p class="item-number flex flex--center">0</p>
+						</div>
+						<!-- MOBILE MENU -->
+						<div class="img-wrapper menu">
+							<img src="assets/icons/menu.png" alt="menu" />
+						</div>
+						<!-- DESKTOP BUTTONS -->
+						<div class="button-group">
+							<a href="#" class="btn btn--white">Log In</a>
+							<a href="#" class="btn btn--primary try-for-free">Try For Free</a>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<!-- HEADER & NAVIGATION END -->
+
+		<!-- MAIN SECTION -->
+		<main>
+			<!-- HERO SECTION -->
+			<section class="section--hero">
+				<div class="container">
+					<div class="hero">
+						<div class="hero-content">
+							<div class="vector-image-group vector-image-group--back">
+								<div class="img-wrapper saturn">
+									<img src="assets/icons/saturn.png" alt="saturn" />
+								</div>
+								<div class="img-wrapper rain">
+									<img src="assets/icons/rain.png" alt="rain" />
+								</div>
+							</div>
+							<span class="sub-title">100% Satisfaction Guarantee</span>
+							<h1 class="hero-heading">
+								Learn <span class="hero-heading--blue">Skills</span> From Our
+								Top Instructors
+							</h1>
+							<p class="hero-paragraph">
+								Borem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+								tellus, luctus nec ullamcorper mattisBorem ipsum dolor sit amet
+								consectetur adipiscing area we followelit.
+							</p>
+							<div class="hero-extra">
+								<a href="#" class="btn btn--primary btn--img">
+									EXPLORE COURSES
+									<span class="img-wrapper img-wrapper--arrow">
+										<img src="assets/icons/arrow-right.svg" alt="arrow-right" />
+									</span>
+								</a>
+								<div class="contact flex">
+									<div class="img-wrapper">
+										<img src="assets/icons/call.png" alt="telephone" />
+									</div>
+									<div class="contact__text">
+										<h5>Have Any Questions?</h5>
+										<a href="tel:993-00-67777">993-00-67777</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="hero-image">
+							<div class="vector-image-group">
+								<div class="img-wrapper paper">
+									<img src="assets/icons/paper.png" alt="paper" />
+								</div>
+								<div class="img-wrapper ruler">
+									<img src="assets/icons/divider.png" alt="ruler" />
+								</div>
+								<div class="img-wrapper arrow">
+									<img src="assets/icons/vector_arrow.png" alt="arrow" />
+								</div>
+							</div>
+							<div class="hero-cards">
+								<div class="hero-card">
+									<div class="img-wrapper img-wrapper--green">
+										<img src="assets/icons/group.png" alt="group of people" />
+									</div>
+									<p class="hero-card__text">Total Students</p>
+									<p class="hero-card__number">15K</p>
+								</div>
+								<div class="hero-card hero-card--graduation">
+									<div class="img-wrapper img-wrapper--purple">
+										<img src="assets/icons/hat.svg" alt="graduation hat" />
+									</div>
+									<p class="hero-card__text">Complete Graduation</p>
+									<p class="hero-card__number">34K</p>
+								</div>
+							</div>
+							<div class="img-wrapper">
+								<img
+									src="assets/images/banner_img.png"
+									alt="women with pen and paper"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- HERO SECTION END -->
+			<!-- BRAND SLIDER SECTION -->
+			<div class="carousel-wrapper">
+				<div class="container">
+					<div class="carousel flex" id="carousel">
+						<div class="img-wrapper img-wrapper--carousel">
+							<img src="assets/images/amd.png" alt="amd logo" loading="lazy" />
+						</div>
+						<div class="img-wrapper img-wrapper--carousel">
+							<img
+								src="assets/images/amazon.png"
+								alt="amazon logo"
+								loading="lazy"
+							/>
+						</div>
+						<div class="img-wrapper img-wrapper--carousel">
+							<img
+								src="assets/images/walmart.png"
+								alt="walmart logo"
+								loading="lazy"
+							/>
+						</div>
+						<div class="img-wrapper img-wrapper--carousel">
+							<img
+								src="assets/images/adobe.png"
+								alt="adobe logo"
+								loading="lazy"
+							/>
+						</div>
+						<div class="img-wrapper img-wrapper--carousel">
+							<img
+								src="assets/images/coursera.png"
+								alt="coursera logo"
+								loading="lazy"
+							/>
+						</div>
+						<div class="img-wrapper img-wrapper--carousel">
+							<img
+								src="assets/images/perncilbox.png"
+								alt="perncilbox.png logo"
+								loading="lazy"
+							/>
+						</div>
+						<div class="img-wrapper img-wrapper--carousel">
+							<img
+								src="assets/images/udemy.png"
+								alt="udemy logo"
+								loading="lazy"
+							/>
+						</div>
+						<div class="img-wrapper img-wrapper--carousel" id="first-image">
+							<img src="assets/images/amd.png" alt="amd logo" loading="lazy" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- BRAND SLIDER SECTION END -->
+			<!-- DISCOVER SECTION -->
+			<section>
+				<div class="container container--discover">
+					<div class="discover-image">
+						<div class="vector-image-group">
+							<div class="img-wrapper dots">
+								<img src="assets/icons/about_dots.svg.svg" alt="dots" />
+							</div>
+						</div>
+						<div class="abs-discover-content">
+							<h4>12+</h4>
+							<p>Years of Experiences</p>
+						</div>
+						<div class="img-wrapper">
+							<img src="assets/images/discover-women.png" alt="women" />
+						</div>
+						<div class="img-wrapper">
+							<img src="assets/images/dicoverman.png" alt="man" />
+						</div>
+					</div>
+					<div class="discover-content">
+						<span class="sub-title">Get To Know About Us</span>
+						<h3 class="discover-heading">
+							Discover Top
+							<span class="hero-heading--blue">Instructors</span> Around The
+							World
+						</h3>
+						<p class="discover-paragraph">
+							Borem ipsum dolor sit amet, consectetur adipiscing eliawe awUt
+							elit ellus, luctus nec ullamcorper mattisBorem ipsum dolor awes
+							atnse awctetur adipis we followelit. Borem.
+						</p>
+						<div class="features-group">
+							<div class="feature-item">
+								<div class="img-wrapper flex flex--center">
+									<img src="assets/icons/feature1.svg" alt="icon" />
+								</div>
+								<div class="feature-content">
+									<p>2000+</p>
+									<p>Expert Tutors</p>
+								</div>
+							</div>
+							<div class="feature-item">
+								<div class="img-wrapper flex flex--center">
+									<img src="assets/icons/feature2.svg" alt="icon" />
+								</div>
+								<div class="feature-content">
+									<p>1500+</p>
+									<p>Top Lessons</p>
+								</div>
+							</div>
+							<div class="feature-item">
+								<div class="img-wrapper flex flex--center">
+									<img src="assets/icons/feature4.svg" alt="icon" />
+								</div>
+								<div class="feature-content">
+									<p>18000+</p>
+									<p>Over Student</p>
+									<p></p>
+								</div>
+							</div>
+							<div class="feature-item">
+								<div class="img-wrapper flex flex--center">
+									<img src="assets/icons/feature3.svg" alt="icon" />
+								</div>
+								<div class="feature-content">
+									<p>3200+</p>
+									<p>Pro Videos</p>
+								</div>
+							</div>
+						</div>
+						<a href="#" class="btn btn--primary btn--img">
+							DISCOVER MORE
+							<span class="img-wrapper img-wrapper--arrow">
+								<img src="assets/icons/arrow-right.svg" alt="arrow" />
+							</span>
+						</a>
+					</div>
+				</div>
+			</section>
+			<!-- DISCOVER SECTION END-->
+			<!-- QUOTE SECTION -->
+			<section class="section--quote">
+				<div class="container">
+					<div class="quote-wrapper">
+						<div class="quote-image">
+							<div class="img-wrapper">
+								<img src="assets/images/person1.jpg" alt="person" />
+							</div>
+						</div>
+						<div class="quote-content">
+							<h3 class="quote-heading">What Out Students Say About Us</h3>
+							<div class="img-wrapper quote-icon">
+								<img src="assets/icons/quote.png" alt="quote" />
+							</div>
+							<p class="quote">
+								“ when an unknown printer took a galley of type and scrambled to
+								make a type specimen book. It has survived not only five
+								centuries, but also the leap into electronic.”
+							</p>
+							<div class="quote-person">
+								<h3 class="quote-name">Parker Robert</h3>
+								<p class="quote-designation">UI Designer</p>
+							</div>
+							<div class="quote-button-group">
+								<button class="btn-left">
+									<div class="img-wrapper">
+										<img
+											src="./assets/icons/chevron-left.svg"
+											alt="chevron-left"
+										/>
+									</div>
+								</button>
+								<button class="btn-right">
+									<div class="img-wrapper">
+										<img
+											src="./assets/icons/chevron-right.svg"
+											alt="chevron-right"
+										/>
+									</div>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- QUOTE SECTION END-->
+			<!-- INSTRUCTOR SECTION -->
+			<section>
+				<div class="container">
+					<div class="instructor-title">
+						<div class="instructor-title__left">
+							<span class="sub-title">Our Qualified People Matter</span>
+							<h3 class="instructor-heading">
+								Top <span class="hero-heading--blue">Class</span> Instructor
+							</h3>
+						</div>
+						<a href="#" class="btn btn--primary btn--img">
+							ALL INSTRUCTORS
+							<span class="img-wrapper img-wrapper--arrow">
+								<img src="assets/icons/arrow-right.svg" alt="arrow-right" />
+							</span>
+						</a>
+					</div>
+					<div class="instructor-img-group">
+						<div class="instructor-wrapper">
+							<div class="instructor-img">
+								<div
+									class="instructor-background instructor-background--1"
+								></div>
+								<div class="img-wrapper">
+									<img src="assets/images/instructor1.png" alt="instructor" />
+								</div>
+							</div>
+							<div class="instructor-content">
+								<div class="instructor-info">
+									<h4 class="instructor-post">Graphic Design</h4>
+									<h3 class="instructor-name">Robert Smith</h3>
+								</div>
+								<div class="share-img-group">
+									<div class="img-wrapper img-wrapper--share flex flex--center">
+										<img src="assets/icons/share.svg" alt="share" />
+									</div>
+									<div class="share-social-group">
+										<div
+											class="img-wrapper img-wrapper--social flex flex--center"
+										>
+											<img src="assets/icons/youtube.svg" alt="youtube" />
+										</div>
+										<div
+											class="img-wrapper img-wrapper--social img-wrapper--social-1 flex flex--center"
+										>
+											<img src="assets/icons/linkedin.svg" alt="linkedin" />
+										</div>
+										<div
+											class="img-wrapper img-wrapper--social img-wrapper--social-2 flex flex--center"
+										>
+											<img src="assets/icons/twitter.svg" alt="twitter" />
+										</div>
+										<div
+											class="img-wrapper img-wrapper--social img-wrapper--social-3 flex flex--center"
+										>
+											<img src="assets/icons/facebook.svg" alt="facebook" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="instructor-wrapper">
+							<div class="instructor-img">
+								<div
+									class="instructor-background instructor-background--2"
+								></div>
+								<div class="img-wrapper">
+									<img src="assets/images/instructor2.png" alt="instructor" />
+								</div>
+							</div>
+							<div class="instructor-content">
+								<div class="instructor-info">
+									<h4 class="instructor-post">Web Design</h4>
+									<h3 class="instructor-name">Olivia Mia</h3>
+								</div>
+								<div class="share-img-group">
+									<div class="img-wrapper img-wrapper--share flex flex--center">
+										<img src="assets/icons/share.svg" alt="share" />
+									</div>
+									<div class="share-social-group">
+										<div
+											class="img-wrapper img-wrapper--social flex flex--center"
+										>
+											<img src="assets/icons/youtube.svg" alt="youtube" />
+										</div>
+										<div
+											class="img-wrapper img-wrapper--social img-wrapper--social-1 flex flex--center"
+										>
+											<img src="assets/icons/linkedin.svg" alt="linkedin" />
+										</div>
+										<div
+											class="img-wrapper img-wrapper--social img-wrapper--social-2 flex flex--center"
+										>
+											<img src="assets/icons/twitter.svg" alt="twitter" />
+										</div>
+										<div
+											class="img-wrapper img-wrapper--social img-wrapper--social-3 flex flex--center"
+										>
+											<img src="assets/icons/facebook.svg" alt="facebook" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="instructor-wrapper">
+							<div class="instructor-img">
+								<div
+									class="instructor-background instructor-background--3"
+								></div>
+								<div class="img-wrapper">
+									<img src="assets/images/instructor3.png" alt="instructor" />
+								</div>
+							</div>
+							<div class="instructor-content">
+								<div class="instructor-info">
+									<h4 class="instructor-post">Digital Marketing</h4>
+									<h3 class="instructor-name">William Hope</h3>
+								</div>
+								<div class="share-img-group">
+									<div class="img-wrapper img-wrapper--share flex flex--center">
+										<img src="assets/icons/share.svg" alt="share" />
+									</div>
+									<div class="share-social-group">
+										<div
+											class="img-wrapper img-wrapper--social flex flex--center"
+										>
+											<img src="assets/icons/youtube.svg" alt="youtube" />
+										</div>
+										<div
+											class="img-wrapper img-wrapper--social img-wrapper--social-1 flex flex--center"
+										>
+											<img src="assets/icons/linkedin.svg" alt="linkedin" />
+										</div>
+										<div
+											class="img-wrapper img-wrapper--social img-wrapper--social-2 flex flex--center"
+										>
+											<img src="assets/icons/twitter.svg" alt="twitter" />
+										</div>
+										<div
+											class="img-wrapper img-wrapper--social img-wrapper--social-3 flex flex--center"
+										>
+											<img src="assets/icons/facebook.svg" alt="facebook" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="instructor-wrapper">
+							<div class="instructor-img">
+								<div
+									class="instructor-background instructor-background--4"
+								></div>
+								<div class="img-wrapper">
+									<img src="assets/images/instructor4.png" alt="instructor" />
+								</div>
+							</div>
+							<div class="instructor-content">
+								<div class="instructor-info">
+									<h4 class="instructor-post">Web Development</h4>
+									<h3 class="instructor-name">Sophia Ava</h3>
+								</div>
+								<div class="share-img-group">
+									<div class="img-wrapper img-wrapper--share flex flex--center">
+										<img src="assets/icons/share.svg" alt="share" />
+									</div>
+									<div class="share-social-group">
+										<div
+											class="img-wrapper img-wrapper--social flex flex--center"
+										>
+											<img src="assets/icons/youtube.svg" alt="youtube" />
+										</div>
+										<div
+											class="img-wrapper img-wrapper--social img-wrapper--social-1 flex flex--center"
+										>
+											<img src="assets/icons/linkedin.svg" alt="linkedin" />
+										</div>
+										<div
+											class="img-wrapper img-wrapper--social img-wrapper--social-2 flex flex--center"
+										>
+											<img src="assets/icons/twitter.svg" alt="twitter" />
+										</div>
+										<div
+											class="img-wrapper img-wrapper--social img-wrapper--social-3 flex flex--center"
+										>
+											<img src="assets/icons/facebook.svg" alt="facebook" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- INSTRUCTOR SECTION END-->
+			<!-- BLOG SECTION -->
+			<section class="section--blog">
+				<div class="container">
+					<div class="instructor-extra">
+						<div class="vector-image-group">
+							<div class="img-wrapper sun">
+								<img src="assets/icons/sun.svg" alt="sun" />
+							</div>
+							<div class="img-wrapper shape">
+								<img src="assets/icons/bg-shape.svg" alt="shape" />
+							</div>
+						</div>
+						<h3 class="instructor-extra__heading">
+							Join Us & Spread Experiences
+						</h3>
+						<div class="instructor-extra__content">
+							<p>
+								Borem ipsum dolor sit amet, consectetur adipiscing eliawe awUt
+								elit ellus, luctus nec ullamcorper mattisBorem
+							</p>
+							<a href="#" class="btn btn--img">
+								BECOME AN INSTRUCTOR
+								<span class="img-wrapper img-wrapper--arrow">
+									<img src="assets/icons/arrow-right-blue.svg" alt="arrow" />
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="blog-title">
+						<span class="sub-title">Always Smart To Hear News</span>
+						<h3 class="blog-heading">
+							Latest <span class="hero-heading--blue">News</span> & Blog
+						</h3>
+						<p class="blog-title__paragraph">
+							Receive huge benefits with our lifetime Plumbing Receive huge
+							benefits with our lifetime Plumbing email address will be shown
+						</p>
+					</div>
+					<div class="blog-card-group">
+						<div class="blog-card-wrapper">
+							<div class="blog-card">
+								<div class="img-wrapper">
+									<img src="assets/images/blog1.jpg" alt="blog image" />
+								</div>
+								<div class="blog-card__content">
+									<a href="#" class="blog-tag">Education</a>
+									<h5 class="blog-card__heading">
+										<a href="#"
+											>when aeunkno printer took galley of scrambled</a
+										>
+									</h5>
+									<div class="blog-info">
+										<a href="#" class="blog-author">
+											<span class="img-wrapper">
+												<img src="assets/icons/man.svg" alt="man" />
+											</span>
+											<span>by Admin</span>
+										</a>
+										<a href="#" class="blog-date">
+											<span class="img-wrapper">
+												<img src="assets/icons/calendar.svg" alt="calendar" />
+											</span>
+											<span>23 Aug, 2023</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="blog-card-wrapper">
+							<div class="blog-card">
+								<div class="img-wrapper">
+									<img src="assets/images/blog2.jpg" alt="blog image" />
+								</div>
+								<div class="blog-card__content">
+									<a href="#" class="blog-tag">Course</a>
+									<h5 class="blog-card__heading">
+										<a href="#">Full Stack GraphQL With Next.js And Vercel</a>
+									</h5>
+									<div class="blog-info">
+										<a href="#" class="blog-author">
+											<span class="img-wrapper">
+												<img src="assets/icons/man.svg" alt="man" />
+											</span>
+											<span>by Admin</span>
+										</a>
+										<a href="#" class="blog-date">
+											<span class="img-wrapper">
+												<img src="assets/icons/calendar.svg" alt="calendar" />
+											</span>
+											<span>24 Aug, 2023</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="blog-card-wrapper">
+							<div class="blog-card">
+								<div class="img-wrapper">
+									<img src="assets/images/blog3.jpg" alt="blog image" />
+								</div>
+								<div class="blog-card__content">
+									<a href="#" class="blog-tag">Skill Development</a>
+									<h5 class="blog-card__heading">
+										<a href="#">What Leonardo Teach us About Web Design</a>
+									</h5>
+									<div class="blog-info">
+										<a href="#" class="blog-author">
+											<span class="img-wrapper">
+												<img src="assets/icons/man.svg" alt="man" />
+											</span>
+											<span>by Admin</span>
+										</a>
+										<a href="#" class="blog-date">
+											<span class="img-wrapper">
+												<img src="assets/icons/calendar.svg" alt="calendar" />
+											</span>
+											<span>24 Aug, 2023</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- BLOG SECTION END -->
+			<!-- NEWSLETTER SECTION -->
+			<section>
+				<div class="container">
+					<div class="newsletter-wrapper">
+						<div class="newsletter-content">
+							<div class="img-wrapper">
+								<img src="assets/images/newsletter.png" alt="newsletter" />
+							</div>
+							<h2 class="newsletter-heading">Let's Join To Our Newsletters</h2>
+						</div>
+						<form class="newsletter-form">
+							<input
+								type="email"
+								class="newsletter-form__input"
+								placeholder="Enter Your Email"
+							/>
+							<input
+								type="submit"
+								class="btn btn--primary btn--newsletter"
+								value="SUBSCRIBE NOW"
+							/>
+						</form>
+					</div>
+				</div>
+			</section>
+			<!-- NEWSLETTER SECTION END -->
+		</main>
+		<!-- MAIN SECTION END -->
+
+		<!-- FOOTER -->
+		<footer>
+			<div class="container">
+				<div class="footer__top-content">
+					<div class="footer-main">
+						<a href="/" class="logo">
+							<span class="img-wrapper">
+								<img src="assets/logo-white.png" alt="logo" />
+							</span>
+						</a>
+						<p class="footer-main__content">
+							when an unknown printer took galley of type and scrambled it to
+							make pspecimen bookt has.
+						</p>
+						<p class="location">463 7th Ave, NY 10018, USA</p>
+						<p class="number">+123 88 9900 456</p>
+						<div class="social-group">
+							<a href="#" class="social">
+								<span class="img-wrapper">
+									<img src="assets/icons/facebook.svg" alt="facebook" />
+								</span>
+							</a>
+							<a href="#" class="social">
+								<span class="img-wrapper">
+									<img src="assets/icons/twitter.svg" alt="twitter" />
+								</span>
+							</a>
+							<a href="#" class="social">
+								<span class="img-wrapper">
+									<img src="assets/icons/whatsapp.svg" alt="whatsapp" />
+								</span>
+							</a>
+							<a href="#" class="social">
+								<span class="img-wrapper">
+									<img src="assets/icons/linkedin.svg" alt="linkedin" />
+								</span>
+							</a>
+							<a href="#" class="social">
+								<span class="img-wrapper">
+									<img src="assets/icons/youtube.svg" alt="youtube" />
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="footer-list-wrapper">
+						<h3 class="footer-list__heading">Resources</h3>
+						<ul class="footer-list">
+							<li class="footer-list__item">
+								<a href="#" class="footer-list__link">About</a>
+							</li>
+							<li class="footer-list__item">
+								<a href="#" class="footer-list__link">Contact</a>
+							</li>
+							<li class="footer-list__item">
+								<a href="#" class="footer-list__link">Help Center</a>
+							</li>
+							<li class="footer-list__item">
+								<a href="#" class="footer-list__link">Refund</a>
+							</li>
+							<li class="footer-list__item">
+								<a href="#" class="footer-list__link">Conditions</a>
+							</li>
+							<li class="footer-list__item">
+								<a href="#" class="footer-list__link">Privacy Policy</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-list-wrapper">
+						<h3 class="footer-list__heading">Courses</h3>
+						<ul class="footer-list">
+							<li class="footer-list__item">
+								<a href="#" class="footer-list__link">Life Coach</a>
+							</li>
+							<li class="footer-list__item">
+								<a href="#" class="footer-list__link">Health Coach</a>
+							</li>
+							<li class="footer-list__item">
+								<a href="#" class="footer-list__link">Business Coach</a>
+							</li>
+							<li class="footer-list__item">
+								<a href="#" class="footer-list__link">Development</a>
+							</li>
+							<li class="footer-list__item">
+								<a href="#" class="footer-list__link">Web Design</a>
+							</li>
+							<li class="footer-list__item">
+								<a href="#" class="footer-list__link">SEO Optimize</a>
+							</li>
+						</ul>
+					</div>
+					<div class="working-hours-wrapper">
+						<h3 class="working-hours__heading">Working Hours</h3>
+						<div class="timing-wrapper">
+							<p class="days">Mon - Fri</p>
+							<p class="timing">8:00 AM - 5:00 PM</p>
+						</div>
+						<hr />
+						<div class="timing-wrapper">
+							<p class="days">Mon - Fri</p>
+							<p class="timing">9:00 AM - 6:00 PM</p>
+						</div>
+						<hr />
+						<div class="timing-wrapper">
+							<p class="days">Mon - Fri</p>
+							<p class="timing">10:00 AM - 8:00 PM</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr />
+			<div class="container">
+				<div class="footer__bottom-content">
+					<p class="copyright">
+						Copyright &copy; 2023 Eduvalt. All Rights Reserved.
+					</p>
+					<ul class="footer-extra">
+						<li class="footer-extra__item">
+							<a href="#" class="footer-extra__link">Privacy Policy</a>
+						</li>
+						<li class="footer-extra__item">.</li>
+						<li class="footer-extra__item">
+							<a href="#" class="footer-extra__link">Terms & Conditions</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+		<!-- FOOTER END -->
+		<script src="js/index.js"></script>
+	</body>
 </html>
